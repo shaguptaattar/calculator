@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+
+    /*Calculator Body*/
+.calc-body {
+    width: 275px;
+    margin: auto;
+    min-height: 400px;
+    border-start-end-radius: black;
+    background: #3A4655;
+    box-shadow: 20px  20px  rgb(88, 93, 94);
+
+}
+/*Calculator Display Screen*/
+.calc-screen {
+    padding: 1rem;
+    font-size: large;
+}
+#calc-operation {
+    font-size: 10px;
+    text-align: right;
+    color: #727B86;
+    padding-bottom: .5rem;
+}
+#calc-typed {
+    font-size: 100px;
+    text-align: right;
+    color: #fff;
+}
+/*Calculator Buttons*/
+.calc-button-row{
+    display: table;
+}
+.calc-button-row button {
+    display: table-cell;
+    width: 25%;
+    background: #425062;
+    color: #fff;
+    height: 100px;
+    font-size: 40px;
+    border: none;
+    border-color:#3C4857;
+    border-width: 1px 1px 0px 0;
+    border-style: solid;
+}
+.calc-button-row button.ac {
+    color: #ff7665;
+}
+.calc-button-row button.opt {
+    color: #ffbc56;
+}
+/*The border has been managed in every fourth button so that the design will not distract.*/
+.calc-button-row button:nth-child(4n){
+    border-right: none;
+}
+.calc-button-row button:active {
+    position: relative;
+    top: 1px;
+}
+.calc-button-row button:hover {
+    background: black;
+
+}
+input[type="button"] {
+            width: 100px;
+            height: 48px;
+            font-size: 100px;
+            margin-right: 5px;
+        }
+      </style>
+</head>
+<body>
+
+ <center><h1> calculator </h1></center>
+ <div class="calc-body">
+        
+
+  <div class="calc-screen">
+
+    <input type="text" id="disp" name="Number" style="height: 80px; width: 100%; border-radius: 100px ;">
+    
+  </div>
+
+  <div class="calc-button-row">
+
+
+    <button onclick="digiteseven()">7</button>
+    <button onclick="digiteeight()">8</button>
+    <button onclick="digitnine()">9</button>
+    <button class="ac" onclick="digitediv()">/</button>
+
+
+    <button onclick="digitefour()">4</button>
+    <button onclick="digitefive()">5</button>
+    <button onclick="digitesix()">6</button>
+    <button class="ac" onclick="digitemul()">*</button>
+
+    <button onclick="digiteone()">1</button>
+    <button onclick="digitetwo()">2</button>
+    <button onclick="digitethree()">3</button>
+    <button  class="ac" onclick="digitesub()">-</button>
+
+    <button class="ac" onclick="digitezero()">0</button>
+    <button class="ac" onclick="digiteadd()">+</button>
+    <button class="ac" onclick="digiteclr()">clr</button>
+    <button class="opt"onclick="res()">=</button>
+
+    
+</div>
+
+</div>
+
+</body>
+
+<script>
+
+function digiteone( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='1';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitetwo( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='2';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitethree( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='3';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitefour( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='4';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitefive( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='5';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitesix( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='6';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digiteseven( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='7';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digiteeight( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='8';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitenine( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='9';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+function digitezero( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='0';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+
+function digiteadd( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='+';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+
+function digitesub( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='-';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+
+
+function digitemul( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='*';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+
+function digitediv( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='/';
+var newval=oldval+digit;
+document.getElementById('disp').value=newval;
+}
+
+
+
+function digiteclr( )
+
+{
+var oldval=document.getElementById('disp').value;
+var digit='';
+document.getElementById('disp').value=digit;
+}
+
+
+
+function res( )
+
+{
+var oldval=document.getElementById('disp').value;
+
+var newval=eval(oldval);
+document.getElementById('disp').value=newval;
+}
+
+</script>
+
+</html>
